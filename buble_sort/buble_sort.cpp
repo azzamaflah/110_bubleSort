@@ -30,6 +30,18 @@ void input() {              // procedur untuk input
 
 }
 
+void bubbleSortArray() {                            // procedur untuk mengurutkan array dengan metode bubble sort
+    for (int i = 1; i < n; i++) {                   // looping dengan j dimulai dari - hingga n-i-1
+        for (int j = 0; j < n - i; j++) {           // jika nilai pada a[j] ke variable sementara te
+            if (a[j] > a[j + 1]) {
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
+    }
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
