@@ -65,6 +65,14 @@ void display() {                                            // procedur untuk me
     cout << endl;                                           // output baris kosong
 }
 
+int main() {
+    input();                //Memanggil procedur read()
+    unsorted();             //Memanggil procedur unsorted() dari
+    bubbleSortArray();      //Memanggil procedur bubbleSortArray
+    display();              //Memanggil procedur display()
+
+    return 0;
+}
 int main()
 {
     std::cout << "Hello World!\n";
